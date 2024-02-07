@@ -12,12 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainImage = document.querySelector('.mainimage');
     const noChoice = document.getElementById('nochoice')
     const awkwardText = document.getElementById('awkwardtext')
+
     const yesSound = document.getElementById('amidreaming');
     const idea22 = document.getElementById('idea')
+    const amongUs = document.getElementById('amongus')
     ///all of the above is to apply a const to each element ID from the html you can identify everything easier 
 
     yesSound.volume = 0.3
-    idea22.volume = 0.2
+    idea22.volume = 0.3
+    amongUs.volume = 0.4
 
 
     // moves the 3rd no button when pressed 
@@ -53,6 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
         secondNoMessage.style.display = 'block';
         noChoice.style.display = 'none'; ///this makes sure the nochoice txt doesn't show until the thirdnobutton click
         mainImage.src = "images/sideeye.jpeg"
+        idea22.pause();
+        amongUs.play();
+        
     });
   
     secondYesButton.addEventListener('click', function() {
@@ -60,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
       yesMessage.style.display = 'block';
       mainImage.src = 'images/celebrationgif.gif';
       yesSound.play();
-      idea22.pause(); ///as soon as second yes is clicked we want the sat music to stop
+      idea22.pause();
+      amongUs.pause(); ///as soon as second yes is clicked we want the sat music to stop
     });
 
     ///i am directing the third no button to carry 
@@ -80,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         noChoice.style.display = 'none';
         yesSound.play();
         idea22.pause();
+        amongUs.pause()
 
     });     
 
