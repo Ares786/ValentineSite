@@ -1,6 +1,6 @@
 Hi, 
 
-I made this website for my girlfriend asking her to be my valentine.
+I made this website for my Fiance asking her to be my valentine.
 I'm self-taught and everything here is just stuff i picked up and learnt picking apart
 other peoples code and alot of trial and error.
 
